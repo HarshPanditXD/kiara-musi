@@ -6,23 +6,19 @@
   <b>🎶 KIARA MUSIC</b>
 </h1>
 
-![Repo 👁‍🗨](https://komarev.com/ghpvc/?username=kenkansaja&color=red&style=flat-square&label=DILIHAT+👁‍🗨)
-
-
 ### A bot that can play music on Telegram Group and Channel Voice Chats
 #### POWERED BY [PYTGCALLS](https://github.com/pytgcalls/pytgcalls)
 
 
 ## TELEGRAM
 
-<b>OWNER [KEN KAN](https://t.me/kenkanasw)</b>
+<b>OWNER [Harsh](https://t.me/Proud_of_an_Indian)</b>
 
-<b>GROUP MUSIKKU
-[@musikkugroup](https://t.me/mausikkugroup)</b>
+<b>GROUP SUPPORT [Group](https://t.me/Kiara_Support)</b>
 
-<b>CHANNEL MUSIKKU [@musikkuchannel](https://t.me/musikkuchannel)</b>
+<b>CHANNEL SUPPORT [Channel](https://t.me/The_Blaze_Network)</b>
 
-<b>TEMUKAN DI TELEGRAM [@Musiksayabot](https://t.me/Musiksayabot)</b>
+<b>MUSIC BOT TELEGRAM [Kiara Music Bot](https://t.me/kiara_ro_bot)</b>
 
 
 
