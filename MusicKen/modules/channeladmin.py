@@ -37,13 +37,13 @@ async def resume(_, message: Message):
         conid = conchat.linked_chat.id
         chid = conid
     except:
-        await message.reply("**Apakah obrolan terhubung?**")
+        await message.reply("**Is the chat connected?**")
         return
     chat_id = chid
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "playing"
     ):
-        await message.reply_text("❗ **Tidak ada Lagu yang sedang diputar!**")
+        await message.reply_text("❗ **Is the chat connected!**")
     else:
         callsmusic.pytgcalls.resume_stream(chat_id)
         await message.reply_text("⏸ **Resumed!**")
@@ -58,11 +58,11 @@ async def stop(_, message: Message):
         conid = conchat.linked_chat.id
         chid = conid
     except:
-        await message.reply("**Apakah obrolan terhubung?**")
+        await message.reply("**No Song is playing?**")
         return
     chat_id = chid
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ **Tidak ada Lagu yang sedang diputar!**")
+        await message.reply_text("❗ **No Song is playing!**")
     else:
         try:
             callsmusic.queues.clear(chat_id)
@@ -70,7 +70,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text("❌ **Memberhentikan Lagu!**")
+        await message.reply_text("❌ **Stopping the Song!**")
 
 
 @Client.on_message(
@@ -83,11 +83,12 @@ async def skip(_, message: Message):
         conid = conchat.linked_chat.id
         chid = conid
     except:
-        await message.reply("**Apakah obrolan terhubung?**")
+        await message.reply("**Translated from ms to en:
+Stopping the Song?**")
         return
     chat_id = chid
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ **Tidak ada Lagu Selanjutnya untuk dilewati!**")
+        await message.reply_text("❗ **No Next Song to skip!**")
     else:
         callsmusic.queues.task_done(chat_id)
 
@@ -98,7 +99,7 @@ async def skip(_, message: Message):
                 chat_id, callsmusic.queues.get(chat_id)["file"]
             )
 
-        await message.reply_text("⏩ **Melewati lagu saat ini!**")
+        await message.reply_text("⏩ **Skip the current song!**")
 
 
 @Client.on_message(filters.command("channeladmincache"))
@@ -108,7 +109,7 @@ async def admincache(client, message: Message):
         conid = conchat.linked_chat.id
         chid = conid
     except:
-        await message.reply("**Apakah obrolan terhubung?**")
+        await message.reply("**Is the chat connected?**")
         return
     set(
         chid,
@@ -117,4 +118,4 @@ async def admincache(client, message: Message):
             for member in await conchat.linked_chat.get_members(filter="administrators")
         ],
     )
-    await message.reply_text("✅️ **Daftar admin** telah **diperbarui**")
+    await message.reply_text("✅️ **list admin**has  **updated**")
