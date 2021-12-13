@@ -32,12 +32,12 @@ async def playlist(client, message):
         lel = await client.get_chat(message.chat.id)
         lol = lel.linked_chat.id
     except:
-        message.reply("Apakah channel ini terhubung?")
+        message.reply("Is this channel connected?")
         return
     global que
     queue = que.get(lol)
     if not queue:
-        await message.reply_text("Assistant telah siap")
+        await message.reply_text("Assistant is ready")
     temp = list(queue)
     now_playing = temp[0][0]
     by = temp[0][1].mention(style="md")
@@ -100,14 +100,14 @@ async def ee(client, message):
         lol = lel.linked_chat.id
         conv = lel.linked_chat
     except:
-        await message.reply("Apakah obrolan ini terhubung")
+        await message.reply("Is this chat connected")
         return
     queue = que.get(lol)
     stats = updated_stats(conv, queue)
     if stats:
         await message.reply(stats)
     else:
-        await message.reply("Tidak ada instance VCG yang berjalan dalam obrolan ini")
+        await message.reply("There are no running VCG instances in this chat")
 
 
 @Client.on_message(
@@ -120,7 +120,7 @@ async def settings(client, message):
         lol = lel.linked_chat.id
         conv = lel.linked_chat
     except:
-        await message.reply("Apakah obrolan ini terhubung")
+        await message.reply("Is this chat connected")
         return
     queue = que.get(lol)
     stats = updated_stats(conv, queue)
