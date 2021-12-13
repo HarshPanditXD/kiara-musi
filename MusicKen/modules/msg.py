@@ -80,12 +80,12 @@ class Messages:
         f"""👋🏻 Hello, my name is Kiara [{PROJECT_NAME}](https://telegra.ph/file/ab14af8de37ff62bc425c.jpg)
  Schooled by{OWNER}
 ・✦▭▭▭▭✧◦✦◦✧▭▭▭▭✦ ・
-☑️ Saya memiliki banyak fitur untuk anda yang suka lagu
-🔘 Memutar lagu di group 
-🔘 Memutar lagu di channel
-🔘 Mendownload lagu
-🔘 Mencari link youtube
-・✦▭▭▭▭✧◦✦◦✧▭▭▭▭✦ ・
-☑️ Klik tombol bantuan untuk informasi lebih lanjut
+️ I have a lot of fur for those of you who like songs
+☑️Play songs in the group
+🔘Play songs on channel
+🔘Download songs
+🔘Looking for youtube link
+️
+️ Click the help button for more information
 """,
     ]
