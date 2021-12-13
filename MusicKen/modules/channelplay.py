@@ -132,7 +132,7 @@ async def settings(client, message):
         else:
             await message.reply(stats, reply_markup=r_ply("play"))
     else:
-        await message.reply("Tidak ada instance VCG yang berjalan dalam obrolan ini")
+        await message.reply(There are no running VCG instances in this chat")
 
 
 @Client.on_callback_query(filters.regex(pattern=r"^(cplaylist)$"))
@@ -152,7 +152,7 @@ async def p_cb(b, cb):
     if type_ == "playlist":
         queue = que.get(lol)
         if not queue:
-            await cb.message.edit("Assistant sudah siap")
+            await cb.message.edit("Assistant is ready")
         temp = list(queue)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style="md")
@@ -200,7 +200,7 @@ async def m_cb(b, cb):
         if (chet_id not in callsmusic.pytgcalls.active_calls) or (
             callsmusic.pytgcalls.active_calls[chet_id] == "paused"
         ):
-            await cb.answer("Obrolan tidak terhubung!", show_alert=True)
+            await cb.answer("Chat not connected!", show_alert=True)
         else:
             callsmusic.pytgcalls.pause_stream(chet_id)
 
@@ -211,7 +211,7 @@ async def m_cb(b, cb):
         if (chet_id not in callsmusic.pytgcalls.active_calls) or (
             callsmusic.pytgcalls.active_calls[chet_id] == "playing"
         ):
-            await cb.answer("Obrolan tidak terhubung!", show_alert=True)
+            await cb.answer("Chat not connected!", show_alert=True)
         else:
             callsmusic.pytgcalls.resume_stream(chet_id)
             await cb.answer("Music Resumed!")
@@ -245,7 +245,7 @@ async def m_cb(b, cb):
             callsmusic.pytgcalls.active_calls[chet_id] == "playing"
         ):
             await cb.answer(
-                "Obrolan tidak tersambung atau sudah diputar", show_alert=True
+                "Chat not connected or already playing", show_alert=True
             )
         else:
             callsmusic.pytgcalls.resume_stream(chet_id)
@@ -255,7 +255,7 @@ async def m_cb(b, cb):
             callsmusic.pytgcalls.active_calls[chet_id] == "paused"
         ):
             await cb.answer(
-                "Obrolan tidak tersambung atau sudah dijeda", show_alert=True
+                "The chat is not connected or paused", show_alert=True
             )
         else:
             callsmusic.pytgcalls.pause_stream(chet_id)
@@ -287,7 +287,7 @@ async def m_cb(b, cb):
         if qeue:
             qeue.pop(0)
         if chet_id not in callsmusic.pytgcalls.active_calls:
-            await cb.answer("Obrolan tidak terhubung", show_alert=True)
+            await cb.answer("Chat not connected", show_alert=True)
         else:
             callsmusic.queues.task_done(chet_id)
 
@@ -295,7 +295,7 @@ async def m_cb(b, cb):
                 callsmusic.pytgcalls.leave_group_call(chet_id)
 
                 await cb.message.edit(
-                    "Tidak Ada Lagi Daftar Putar..\n- Meninggalkan VCG!"
+                    "No More Playlists..\n- Meninggalkan VCG!"
                 )
             else:
                 callsmusic.pytgcalls.change_stream(
