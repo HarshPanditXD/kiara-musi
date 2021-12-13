@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="./etc/Music-Ken.gif" alt="Music-Ken Logo"width="400" height="60">
-</p>
-<p align="center"><img src="https://2.bp.blogspot.com/-eBu3-f3vzW0/V3E8UnYXsfI/AAAAAAAADHI/lJrPAoLSE70aO0F3W9fruZ8O-qJY76MSwCLcB/s1600/gambar-gerak-gif-chip-and-dale-terbaru.gif" style="width:100%"></p>
-<p align="center">
+
   <a href="https://github.com/kenkansaja/Music-Ken/fork">
     <img src="https://img.shields.io/github/forks/kenkansaja/Music-Ken?label=FORK&style=social&logoColor=blue"widht="50" height="30">
     
@@ -94,26 +90,3 @@ $ python(3) -m MusicKen
 ### =>> Download Lagu 📥
 
 - /song [nama lagu]: Unduh audio lagu dari youtube
-
-### =>> Saluran Music Play 🛠
-
-⚪️ Hanya untuk admin grup tertaut:
-
-- /cplay (nama lagu) - putar lagu yang Anda minta
-- /cplaylist - Tampilkan daftar yang sedang diputar
-- /cccurrent - Tampilkan sedang diputar
-- /cplayer - buka panel pengaturan pemutar musik
-- /cpause - jeda pemutaran lagu
-- /cresume - melanjutkan pemutaran lagu
-- /cskip - putar lagu berikutnya
-- /cend - hentikan pemutaran musik
-- /userbotjoinchannel - undang asisten ke obrolan Anda
-
-Semua Perintah Bisa Digunakan Kecuali Perintah `/player /skip /pause /resume /end` Hanya Untuk Admin Grup
-
-#### Special Credits
-- [Rojserbest](http://github.com/rojserbes): Callsmusic Developer
-
-This bot is based on the original work done by [Rojserbest](http://github.com/rojserbest). Without his hardwork daisyxmusic won't exist. 
-DaisyXmusic is a modified version of [Callsmusic](https://github.com/callsmusic/callsmusic) for fit the needs of @DaisyXbot users
-
