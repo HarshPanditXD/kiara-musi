@@ -16,7 +16,7 @@ async def pause(_, message: Message):
         conid = conchat.linked_chat.id
         chid = conid
     except:
-        await message.reply("**Apakah obrolan terhubung?**")
+        await message.reply("**Searching for a song?**")
         return
     chat_id = chid
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
