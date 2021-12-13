@@ -1,19 +1,9 @@
-
-  <a href="https://github.com/kenkansaja/Music-Ken/fork">
-    <img src="https://img.shields.io/github/forks/kenkansaja/Music-Ken?label=FORK&style=social&logoColor=blue"widht="50" height="30">
-    
-  </a>
-  <a href="https://github.com/kenkansaja/Music-Ken">
-    <img src="https://img.shields.io/github/stars/kenkansaja/Music-Ken?label=STARS&style=social&logoColor=blue"widht="50" height="30">
-  </a>
-</p>  
-
-# Music-Ken
+# Kiara Muisc
 <p align="center">
-  <img src="https://telegra.ph/file/c8227ff23fa75b9d2b9f7.jpg">
+  <img src="https://telegra.ph/file/753de9d023e666dda1b36.jpg">
 </p>
 <h1 align="center">
-  <b>🎶 MUSIK KEN</b>
+  <b>🎶 KIARA MUSIC</b>
 </h1>
 
 ![Repo 👁‍🗨](https://komarev.com/ghpvc/?username=kenkansaja&color=red&style=flat-square&label=DILIHAT+👁‍🗨)
@@ -53,40 +43,5 @@ Klik tombol dibawah untuk mengambil Pyrogram String Session Atau pilih p bukan t
 Khusus strings pyrogram
 <p align="center">
 <a href="https://t.me/Stringdurhakabot"><img src="https://img.shields.io/badge/STRING-BOT-green?style=plastic&logo=Telegram"width="270" height="40"  /></a>
-<a href="https://t.me/kenkanrobot"><img src="https://img.shields.io/badge/BOT API HASH-DAN APP ID-gold?style=plastic&logo=Telegram&logoColor=yellow"width="270" height="40" /></a>
+<a href="https://t.me/Kiara_ro_bot"><img src="https://img.shields.io/badge/BOT API HASH-DAN APP ID-gold?style=plastic&logo=Telegram&logoColor=yellow"width="270" height="40" /></a>
 </p>
-
-
-### ⚔ Self-hosting (For Devs) 
-```sh
-# Install Git First (apt-instll git)
-$ git clone https://github.com/kenkansaja/Music-Ken
-$ cd Music-Ken
-# Upgrade sources
-# Install All Requirements 
-$ pip(3) install -r requirements.txt
-# Rename example.env to local.env and fill
-$ npm i -g npm
-# Start Bot 
-$ python(3) -m MusicKen
-```
-
-### 🛠️ Perintah
-
-### =>> Memutar Lagu 🎧
-
-- /lplay - Untuk Memutar lagu yang Anda minta melalui song di gc
-- /ytplay (nama lagu) - Untuk Memutar lagu yang Anda minta melalui youtube
-- /p (nama lagu) - Untuk Memutar lagu yang Anda minta melalui youtube
-- /yt (nama lagu) - Untuk Memutar lagu yang Anda minta melalui youtube
-- /player: Buka menu Pengaturan pemain
-- /skip: Melewati trek saat ini
-- /pause: Jeda trek
-- /resume: Melanjutkan trek yang dijeda
-- /end: ​​Menghentikan pemutaran media
-- /current: Menampilkan trek yang sedang diputar
-- /playlist: Menampilkan daftar putar
-
-### =>> Download Lagu 📥
-
-- /song [nama lagu]: Unduh audio lagu dari youtube
